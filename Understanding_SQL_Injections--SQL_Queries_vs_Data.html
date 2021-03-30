@@ -1,0 +1,8 @@
+<!doctype html><html>
+    <head>
+      <meta http-equiv="content-type" content="text/html; charset=utf-8">
+      <title>SQL Queries vs Data</title>
+      <meta name="generator" content="CherryTree">
+      <link rel="stylesheet" href="res/styles3.css" type="text/css" />
+    </head>
+    <body><div class='page'><h1 class='title'>SQL Queries vs Data</h1><br/><br />Let&#39;s suposse we have the following query:<br /><br /><br />http://example.com/color?colorid=4<br /><br />we can divide the query in two sides.<br /><br /><a href=""><img src="images/19-1.png" alt="images/19-1.png" /></a><br /><br /><br />When you execute this query you&#39;re sending the following code to the database:<br /><br /><div class="codebox"><div class="codebox">select&nbsp;*&nbsp;from&nbsp;color&nbsp;where&nbsp;colorid=<span style="color:#b07e00;font-weight:400">4</span></div></div><br /><br />The number 4 is an <em>untrusted</em> data. The ‘craft’ of this. And here is the really risk of SQL Injection.<br />Instead of ths number you can add any other instruction or data.<br /><br />Because the way it was constructed, the user can supply crafted input trying to make the original SQL statement execute further actions of the user’s choice.<br /><br /><p align="center"><img src="images/home.svg" height="22" width="22">  <a href="index.html">Index</a></p></div></body></html>

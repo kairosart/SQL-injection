@@ -1,0 +1,8 @@
+<!doctype html><html>
+    <head>
+      <meta http-equiv="content-type" content="text/html; charset=utf-8">
+      <title>Blind Injections</title>
+      <meta name="generator" content="CherryTree">
+      <link rel="stylesheet" href="res/styles3.css" type="text/css" />
+    </head>
+    <body><div class='page'><h1 class='title'>Blind Injections</h1><br/><br />We&#39;ll base our job on Lab 16.<br /><br />a) Try to login using username=”admin” password=”admin“<br />    <br />    <a href=""><img src="images/157-1.png" alt="images/157-1.png" /></a><br /><br />    Result: We logged in but we don&#39;t have any kind of column being used on the page.<br /><br />b) Trying any other character and you&#39;ll se we can&#39;t get any kind of information on the screen. Even if we use &#39;, &quot; \, #.<br /><br />    Result: This is a blind injection.<br /><br /><strong>NOTE:</strong><br />Blind-based Boolean injections which are like <strong>1 or 1=1</strong>, <strong>1 AND 1=1</strong>, which means for the first query we have the Boolean value 1 and for the second we also have the Boolean value 1, which equals to TRUE, since an AND function is involved.<br /><br />c) Try with &quot;) OR 1=1 #.<br /><br />    <a href=""><img src="images/157-2.png" alt="images/157-2.png" /></a><br /><br />    Result: We logged in but we don&#39;t have any kind of column being used on the page. Anything we put between &quot;) and # will be evaluated.<br /><br />Now we can use either BOOLEAN INJECTION or TIME BASED injection.<br /><br /><br /><br />    <br /><br />    <p align="center"><img src="images/home.svg" height="22" width="22">  <a href="index.html">Index</a></p></div></body></html>

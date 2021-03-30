@@ -1,0 +1,8 @@
+<!doctype html><html>
+    <head>
+      <meta http-equiv="content-type" content="text/html; charset=utf-8">
+      <title>Injecting a backslash</title>
+      <meta name="generator" content="CherryTree">
+      <link rel="stylesheet" href="res/styles3.css" type="text/css" />
+    </head>
+    <body><div class='page'><h1 class='title'>Injecting a backslash</h1><br/><br />Backslash, “\” is an escape character to print characters which have special meaning in SQL..<br /><br />Use a backslash (\).<br /><br />    <a href=""><img src="images/151-1.png" alt="images/151-1.png" /></a><br /><br />    Result: The SQL breaks and  uou have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near &#39;<strong>&quot;\&quot;</strong>) and password=(&quot;&quot;) LIMIT 0,1&#39; at line 1<br /><br /><strong>NOTE</strong><br />We have successfully derived the query. So the knowledge we take out from this result is that the developer has used the query<br /><br />    <div class="codebox"><div class="codebox">select&nbsp;*&nbsp;from&nbsp;TABLE&nbsp;where&nbsp;username=&nbsp;(“$uname”)&nbsp;and&nbsp;password=(“$password”)&nbsp;LIMIT&nbsp;<span style="color:#b07e00;font-weight:400">0</span>,<span style="color:#b07e00;font-weight:400">1</span>&nbsp;&nbsp;&nbsp;</div></div><br /><br /><p align="center"><img src="images/home.svg" height="22" width="22">  <a href="index.html">Index</a></p></div></body></html>

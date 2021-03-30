@@ -1,0 +1,8 @@
+<!doctype html><html>
+    <head>
+      <meta http-equiv="content-type" content="text/html; charset=utf-8">
+      <title>If function</title>
+      <meta name="generator" content="CherryTree">
+      <link rel="stylesheet" href="res/styles3.css" type="text/css" />
+    </head>
+    <body><div class='page'><h1 class='title'>If function</h1><br/><br /><div class="codebox"><div class="codebox">mysql&gt;&nbsp;SELECT&nbsp;select&nbsp;if((select&nbsp;<span style="color:#0057ae;font-weight:400">database()</span>=<span style="color:#dd0000;font-weight:400">&quot;security&quot;</span>),&nbsp;sleep(10),&nbsp;null);<br /><br /></div></div><br /><br /><span style="color:#ffa500;">Output:</span><br />After 10 secs. we got the response because the condition is TRUE.<br /><br /><a href=""><img src="images/135-1.png" alt="images/135-1.png" /></a><br /><br />If we change the “security” to something else.<br /><br /><br /><div class="codebox"><div class="codebox">mysql&gt;&nbsp;SELECT&nbsp;select&nbsp;if((select&nbsp;<span style="color:#0057ae;font-weight:400">database()</span>=<span style="color:#dd0000;font-weight:400">&quot;abc&quot;</span>),&nbsp;sleep(10),&nbsp;null);<br /><br /></div></div><br /><br /><span style="color:#ffa500;">Output:</span><br />We got the response inmediatly becaue  the condition is FALSE.<br /><br /><a href=""><img src="images/135-2.png" alt="images/135-2.png" /></a><br /><br /><p align="center"><img src="images/home.svg" height="22" width="22">  <a href="index.html">Index</a></p></div></body></html>

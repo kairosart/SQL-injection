@@ -1,0 +1,8 @@
+<!doctype html><html>
+    <head>
+      <meta http-equiv="content-type" content="text/html; charset=utf-8">
+      <title>Enumeration</title>
+      <meta name="generator" content="CherryTree">
+      <link rel="stylesheet" href="res/styles3.css" type="text/css" />
+    </head>
+    <body><div class='page'><h1 class='title'>Enumeration</h1><br/><br />a) Commenting out the query.<br />    <br />    Insert: <strong>“) #</strong><br /><br />    <a href=""><img src="images/153-1.png" alt="images/153-1.png" /></a><br /><br />    Result: We don&#39;t have any error.but we can&#39;t log in.<br /><br />b) Introduce somethin in betweeen.<br /><br />    Insert: &quot;) <strong>or 1=1</strong> #<br /><br />    <a href=""><img src="images/153-2.png" alt="images/153-2.png" /></a><br /><br />    Result: We are successfully able to log in. We got: Your Login name:<strong>Dumb</strong>. Your Password:<strong>Dumb</strong>.<br /><br />c) Using the limit function.<br /><br />    Insert: &quot;) or 1=1  <strong>limit 2, 1</strong> #<br /><br />    <a href=""><img src="images/153-3.png" alt="images/153-3.png" /></a><br /><br />    Result: We get the records for the second user through the username. We can change the first parameter of the limit function and we&#39;ll get another users credentials. <br />    The query simply checks for the second OR condition, validates the user, and prints the record of the second row. WE got: Your Login name:<strong>Dummy</strong>. Your Password:<strong>p@ssword</strong>.<br /><br />    <p align="center"><img src="images/home.svg" height="22" width="22">  <a href="index.html">Index</a></p></div></body></html>

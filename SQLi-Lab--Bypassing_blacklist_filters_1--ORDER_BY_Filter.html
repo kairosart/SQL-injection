@@ -1,0 +1,8 @@
+<!doctype html><html>
+    <head>
+      <meta http-equiv="content-type" content="text/html; charset=utf-8">
+      <title>ORDER BY Filter</title>
+      <meta name="generator" content="CherryTree">
+      <link rel="stylesheet" href="res/styles3.css" type="text/css" />
+    </head>
+    <body><div class='page'><h1 class='title'>ORDER BY Filter</h1><br/><br />If you try everything we&#39;ve done in the previos lesson 26 you&#39;ll see there&#39;s no way of breaking the query with “&#39; \ / #”, etc.<br /><br />In this lesoon the developer is entirely working with numeric or integer types.<br /><br />If you try for instance “ORDER BY” it won&#39;t work because as the developer is filtering all ‘OR or AND&quot; strings and ’ORDER&quot; has one of the filteres strings (OR) it&#39;s filtered.<br /><br />We&#39;re going to change the ‘id’ value to any value as 100 and use the “UNION” statement as in previous lessons.<br /><br />URL: http://localhost/sqli-labs-php7-master/Less-25a/?id=100 UNION select 1,database(), version() --<br /><br /><a href=""><img src="images/183-1.png" alt="images/183-1.png" /></a><br /><br />Result: It returns database name: “security” and version: “10.3.22-MariaDB-1”.<br /><br /><p align="center"><img src="images/home.svg" height="22" width="22">  <a href="index.html">Index</a></p></div></body></html>

@@ -1,0 +1,8 @@
+<!doctype html><html>
+    <head>
+      <meta http-equiv="content-type" content="text/html; charset=utf-8">
+      <title>Example</title>
+      <meta name="generator" content="CherryTree">
+      <link rel="stylesheet" href="res/styles3.css" type="text/css" />
+    </head>
+    <body><div class='page'><h1 class='title'>Example</h1><br/><br />We have this query.<br /><br /><div class="codebox"><div class="codebox">select&nbsp;top&nbsp;<span style="color:#b07e00;font-weight:400">1</span>&nbsp;name&nbsp;from&nbsp;color<br />where&nbsp;colorid=<span style="color:#b07e00;font-weight:400">4</span><br />order&nbsp;by&nbsp;name<br /></div></div><br /><br />This query is not terminated.<br /><br />If I add a ‘;&#39; at the end then, It&#39;s terminated and I can add another query.<br /><br /><div class="codebox"><div class="codebox">select&nbsp;top&nbsp;<span style="color:#b07e00;font-weight:400">1</span>&nbsp;name&nbsp;from&nbsp;color<br />where&nbsp;colorid=<span style="color:#b07e00;font-weight:400">4</span><br />order&nbsp;by&nbsp;name;&nbsp;select&nbsp;*&nbsp;from&nbsp;city</div></div><br /><br />The semicolon allows to terminat one query and execute another.<br /><br />But if we type the ‘;’ before finishing the query, then there will be an error.<br /><br /><div class="codebox"><div class="codebox">select&nbsp;top&nbsp;<span style="color:#b07e00;font-weight:400">1</span>&nbsp;name&nbsp;from&nbsp;color;<br />where&nbsp;colorid=<span style="color:#b07e00;font-weight:400">4</span><br />order&nbsp;by&nbsp;name<br /></div></div><br /><br />If we run the above code will get an exception.<br /><br /><p align="center"><img src="images/home.svg" height="22" width="22">  <a href="index.html">Index</a></p></div></body></html>

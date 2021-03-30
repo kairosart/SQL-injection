@@ -1,0 +1,8 @@
+<!doctype html><html>
+    <head>
+      <meta http-equiv="content-type" content="text/html; charset=utf-8">
+      <title>Single Query Injection</title>
+      <meta name="generator" content="CherryTree">
+      <link rel="stylesheet" href="res/styles3.css" type="text/css" />
+    </head>
+    <body><div class='page'><h1 class='title'>Single Query Injection</h1><br/><br />a) Let&#39;s try to fuzz it.<br /><br />    Entering single quote, double qoute or any other character.<br /><br />    <a href=""><img src="images/169-1.png" alt="images/169-1.png" /></a><br /><br />    Result: We can&#39;t log in.<br /><br />b) Log in as “admin”.<br /><br />    <a href=""><img src="images/169-2.png" alt="images/169-2.png" /></a><br /><br />    Result: We are logged in. We have a message &quot;Your User Agent is: Mozilla/5.0 (X11; Linux x86_64; rv:68.0) Gecko/20100101 Firefox/68.0&quot;. So, somehow we can think this information is saved in the Database.<br /><br />    This two parameters, (username and password) are not the only parameters we can use. There are more.<br /><br /><p align="center"><img src="images/home.svg" height="22" width="22">  <a href="index.html">Index</a></p></div></body></html>

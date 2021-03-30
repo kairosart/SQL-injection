@@ -1,0 +1,8 @@
+<!doctype html><html>
+    <head>
+      <meta http-equiv="content-type" content="text/html; charset=utf-8">
+      <title>Tampering data with Burp Suite</title>
+      <meta name="generator" content="CherryTree">
+      <link rel="stylesheet" href="res/styles3.css" type="text/css" />
+    </head>
+    <body><div class='page'><h1 class='title'>Tampering data with Burp Suite</h1><br/><br />a) Send your request to Burp Suite, (Configure it if you doesn&#39;t)    .<br /><br />    <a href=""><img src="images/170-1.png" alt="images/170-1.png" /></a><br /><br />    You can see the same request as the previous point.<br /><br />b) Click on “Action” button and choose “Send to Repeater”. Then go to “Repeater” tab.<br /><br />c) Change the “User/Aggent” value to “Test user agent” and click on “Send” button..<br />    <br />    <a href=""><img src="images/170-2.png" alt="images/170-2.png" /></a><br />        <br />d) You&#39;ll see the Response in the right side panel.<br /><br />e) Click on “Render” button.<br /><br />    <a href=""><img src="images/170-3.png" alt="images/170-3.png" /></a>     <br /><br />    Result: You see the text we&#39;ve changed. <br /><br />f)  Go to your “mysql” shell.  <br /><br />    <div class="codebox"><div class="codebox">select&nbsp;*&nbsp;from&nbsp;uagents;</div></div><br /><br /><br />    <a href=""><img src="images/170-4.png" alt="images/170-4.png" /></a><br /><br />    Result: The test has been injected into the Database.<br /><br /><br />    <p align="center"><img src="images/home.svg" height="22" width="22">  <a href="index.html">Index</a></p></div></body></html>
